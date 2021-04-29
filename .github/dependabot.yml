@@ -1,0 +1,109 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - area/dependencies
+  allow:
+  - dependency-name: org.apache.activemq:artemis-core-client
+  - dependency-name: org.apache.activemq:artemis-jms-client
+  - dependency-name: org.apache.activemq:artemis-server
+  - dependency-name: org.apache.activemq:artemis-commons
+  - dependency-name: org.flywaydb:flyway-core
+  - dependency-name: org.freemarker:freemarker
+  - dependency-name: org.eclipse.jgit:org.eclipse.jgit
+  - dependency-name: io.fabric8:kubernetes-client-bom
+  - dependency-name: org.apache.httpcomponents:httpclient
+  - dependency-name: org.apache.httpcomponents:httpasyncclient
+  - dependency-name: org.apache.httpcomponents:httpcore
+  - dependency-name: org.quartz-scheduler:quartz
+  - dependency-name: com.cronutils:cron-utils
+  - dependency-name: org.eclipse:yasson
+  - dependency-name: io.quarkus.gizmo:gizmo
+  - dependency-name: io.quarkus.http:quarkus-http-vertx-backend
+  - dependency-name: io.quarkus.http:quarkus-http-core
+  - dependency-name: io.quarkus.http:quarkus-http-servlet
+  - dependency-name: io.quarkus.http:quarkus-http-websockets-jsr
+  - dependency-name: org.wildfly.security:wildfly-elytron-*
+  - dependency-name: org.postgresql:postgresql
+  - dependency-name: org.mariadb.jdbc:mariadb-java-client
+  - dependency-name: mysql:mysql-connector-java
+  - dependency-name: org.apache.derby:derbyclient
+  - dependency-name: com.microsoft.sqlserver:mssql-jdbc
+  - dependency-name: org.apache.kafka:kafka-clients
+  - dependency-name: org.apache.kafka:kafka-streams
+  - dependency-name: org.apache.kafka:kafka_2.12
+  - dependency-name: org.apache.zookeeper:zookeeper
+  - dependency-name: io.debezium:debezium-core
+  - dependency-name: org.scala-lang:scala-reflect
+  - dependency-name: org.scala-lang:scala-library
+  - dependency-name: org.scala-lang:scala-compiler
+  - dependency-name: net.alchim31.maven:scala-maven-plugin
+  - dependency-name: io.smallrye:smallrye-jwt
+  - dependency-name: org.apache.tika:tika-parsers
+  - dependency-name: io.reactivex.rxjava2:rxjava
+  - dependency-name: io.rest-assured:rest-assured
+  - dependency-name: io.rest-assured:json-schema-validator
+  - dependency-name: org.junit:junit-bom
+  - dependency-name: org.assertj:assertj-core
+  - dependency-name: org.testcontainers:testcontainers
+  - dependency-name: org.testcontainers:junit-jupiter
+  - dependency-name: org.mockito:mockito-core
+  - dependency-name: org.awaitility:awaitility
+  - dependency-name: net.revelc.code.formatter:formatter-maven-plugin
+  - dependency-name: net.revelc.code:impsort-maven-plugin
+  ignore:
+  - dependency-name: org.flywaydb:flyway-core
+    versions:
+    - 7.5.2
+    - 7.5.3
+    - 7.5.4
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 7.7.2
+    - 7.7.3
+    - 7.8.0
+    - 7.8.1
+  - dependency-name: com.microsoft.sqlserver:mssql-jdbc
+    versions:
+    - 9.1.1.jre15-preview
+    - 9.2.0.jre15
+    - 9.2.1.jre15
+    - 9.3.0.jre15-preview
+  - dependency-name: io.debezium:debezium-core
+    versions:
+    - 1.4.1.Final
+    - 1.4.2.Final
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.7.7
+    - 3.8.0
+  - dependency-name: org.keycloak:keycloak-authz-client
+    versions:
+    - 12.0.2
+    - 12.0.3
+  - dependency-name: org.keycloak:keycloak-adapter-spi
+    versions:
+    - 12.0.2
+    - 12.0.3
+  - dependency-name: org.keycloak:keycloak-core
+    versions:
+    - 12.0.2
+    - 12.0.3
+  - dependency-name: org.keycloak:keycloak-adapter-core
+    versions:
+    - 12.0.2
+    - 12.0.3
+  - dependency-name: io.reactivex.rxjava2:rxjava
+    versions:
+    - 2.2.20
+  - dependency-name: org.freemarker:freemarker
+    versions:
+    - 2.3.30
+  - dependency-name: org.apache.tika:tika-parsers
+    versions:
+    - "1.23"
